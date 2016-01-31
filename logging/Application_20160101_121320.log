@@ -1,0 +1,8 @@
+01/01/2016 12:13:20 : INFO  : com.ags.eiq.logging.Log4J : Successfully loaded log4j properties file 
+01/01/2016 12:13:20 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'orFilepath' and the result is './objectrepository/ObjectRepository.xml' 
+01/01/2016 12:13:20 : INFO  : com.ags.eiq.utils.XMLReader : Started reading of the xml file: ./objectrepository/ObjectRepository.xml 
+01/01/2016 12:13:20 : INFO  : com.ags.eiq.utils.XMLReader : Completed reading of the xml file: ./objectrepository/ObjectRepository.xml 
+01/01/2016 12:13:21 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'browsertype' and the result is 'firefox' 
+01/01/2016 12:13:21 : INFO  : com.ags.eiq.webdriver.WebDriverEngine : Creating an instance of Firefox driver 
+01/01/2016 12:14:10 : ERROR : com.ags.eiq.webdriver.WebDriverEngine : Failed to create the Firefox driver 
+01/01/2016 12:14:10 : INFO  : com.ags.eiq.fixtures.BrowserActions : Clolsing the webdriver instance 

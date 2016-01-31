@@ -1,0 +1,27 @@
+11/01/2016 08:54:54 : INFO  : com.ags.eiq.logging.Log4J : Successfully loaded log4j properties file 
+11/01/2016 08:54:54 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'orFilepath' and the result is './objectrepository/ObjectRepository.xml' 
+11/01/2016 08:54:54 : INFO  : com.ags.eiq.utils.XMLReader : Started reading of the xml file: ./objectrepository/ObjectRepository.xml 
+11/01/2016 08:54:54 : INFO  : com.ags.eiq.utils.XMLReader : Completed reading of the xml file: ./objectrepository/ObjectRepository.xml 
+11/01/2016 08:54:54 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'browsertype' and the result is 'chrome' 
+11/01/2016 08:54:54 : INFO  : com.ags.eiq.webdriver.WebDriverEngine : Creating an instance of Chrome driver 
+11/01/2016 08:54:54 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'chromedriverpath' and the result is './lib/chromedriver.exe' 
+11/01/2016 08:54:58 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'testDataFilePath' and the result is './testdata/testdata.xls' 
+11/01/2016 08:54:58 : INFO  : com.ags.eiq.utils.ExcelReader : Reading tests from sheet [Login] 
+11/01/2016 08:54:59 : INFO  : com.ags.eiq.utils.ExcelReader : Completed reading tests from sheet [Login] 
+11/01/2016 08:54:59 : INFO  : com.ags.eiq.fixtures.BrowserActions : Executing command: [open] for url [http://www.google.com	] 
+11/01/2016 08:55:01 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'testDataFilePath' and the result is './testdata/testdata.xls' 
+11/01/2016 08:55:01 : INFO  : com.ags.eiq.utils.ExcelReader : Reading tests from sheet [Drilldown] 
+11/01/2016 08:55:01 : INFO  : com.ags.eiq.utils.ExcelReader : Completed reading tests from sheet [Drilldown] 
+11/01/2016 08:55:03 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'testDataFilePath' and the result is './testdata/testdata.xls' 
+11/01/2016 08:55:03 : INFO  : com.ags.eiq.utils.ExcelReader : Reading tests from sheet [Drilldown] 
+11/01/2016 08:55:03 : INFO  : com.ags.eiq.utils.ExcelReader : Completed reading tests from sheet [Drilldown] 
+11/01/2016 08:55:05 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'testDataFilePath' and the result is './testdata/testdata.xls' 
+11/01/2016 08:55:05 : INFO  : com.ags.eiq.utils.ExcelReader : Reading tests from sheet [Drilldown] 
+11/01/2016 08:55:05 : INFO  : com.ags.eiq.utils.ExcelReader : Completed reading tests from sheet [Drilldown] 
+11/01/2016 08:55:07 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'testDataFilePath' and the result is './testdata/testdata.xls' 
+11/01/2016 08:55:07 : INFO  : com.ags.eiq.utils.ExcelReader : Reading tests from sheet [Drilldown] 
+11/01/2016 08:55:07 : INFO  : com.ags.eiq.utils.ExcelReader : Completed reading tests from sheet [Drilldown] 
+11/01/2016 08:55:09 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'testDataFilePath' and the result is './testdata/testdata.xls' 
+11/01/2016 08:55:09 : INFO  : com.ags.eiq.utils.ExcelReader : Reading tests from sheet [Drilldown] 
+11/01/2016 08:55:09 : INFO  : com.ags.eiq.utils.ExcelReader : Completed reading tests from sheet [Drilldown] 
+11/01/2016 08:55:11 : INFO  : com.ags.eiq.fixtures.BrowserActions : Clolsing the webdriver instance 

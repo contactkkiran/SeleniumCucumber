@@ -1,0 +1,16 @@
+09/01/2016 08:46:56 : INFO  : com.ags.eiq.logging.Log4J : Successfully loaded log4j properties file 
+09/01/2016 08:46:56 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'orFilepath' and the result is './objectrepository/ObjectRepository.xml' 
+09/01/2016 08:46:56 : INFO  : com.ags.eiq.utils.XMLReader : Started reading of the xml file: ./objectrepository/ObjectRepository.xml 
+09/01/2016 08:46:57 : INFO  : com.ags.eiq.utils.XMLReader : Completed reading of the xml file: ./objectrepository/ObjectRepository.xml 
+09/01/2016 08:46:57 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'browsertype' and the result is 'chrome' 
+09/01/2016 08:46:57 : INFO  : com.ags.eiq.webdriver.WebDriverEngine : Creating an instance of Chrome driver 
+09/01/2016 08:46:57 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'chromedriverpath' and the result is './lib/chromedriver.exe' 
+09/01/2016 08:46:59 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'testDataFilePath' and the result is './testdata/testdata.xls' 
+09/01/2016 08:46:59 : INFO  : com.ags.eiq.utils.ExcelReader : Reading tests from sheet [Login] 
+09/01/2016 08:47:00 : INFO  : com.ags.eiq.utils.ExcelReader : Completed reading tests from sheet [Login] 
+09/01/2016 08:47:00 : INFO  : com.ags.eiq.fixtures.BrowserActions : Executing command: [open] for url [http://www.google.com	] 
+09/01/2016 08:47:02 : INFO  : com.ags.eiq.fixtures.BrowserActions : Executing command: [windowMaximize] 
+09/01/2016 08:47:03 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'browsertype' and the result is 'chrome' 
+09/01/2016 08:47:03 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'testDataFilePath' and the result is './testdata/testdata.xls' 
+09/01/2016 08:47:03 : INFO  : com.ags.eiq.utils.ExcelReader : Reading tests from sheet [Drilldown] 
+09/01/2016 08:47:03 : INFO  : com.ags.eiq.utils.ExcelReader : Completed reading tests from sheet [Drilldown] 

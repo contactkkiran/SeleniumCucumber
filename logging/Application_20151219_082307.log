@@ -1,0 +1,186 @@
+19/12/2015 08:23:07 : INFO  : com.ags.eiq.logging.Log4J : Successfully loaded log4j properties file 
+19/12/2015 08:23:07 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'orFilepath' and the result is './objectrepository/ObjectRepository.xml' 
+19/12/2015 08:23:07 : INFO  : com.ags.eiq.utils.XMLReader : Started reading of the xml file: ./objectrepository/ObjectRepository.xml 
+19/12/2015 08:23:07 : INFO  : com.ags.eiq.utils.XMLReader : Completed reading of the xml file: ./objectrepository/ObjectRepository.xml 
+19/12/2015 08:23:08 : INFO  : org.apache.spark.SparkContext : Running Spark version 1.5.0 
+19/12/2015 08:23:08 : WARN  : org.apache.hadoop.util.NativeCodeLoader : Unable to load native-hadoop library for your platform... using builtin-java classes where applicable 
+19/12/2015 08:23:08 : INFO  : org.apache.spark.SecurityManager : Changing view acls to: kkanumuri 
+19/12/2015 08:23:08 : INFO  : org.apache.spark.SecurityManager : Changing modify acls to: kkanumuri 
+19/12/2015 08:23:08 : INFO  : org.apache.spark.SecurityManager : SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(kkanumuri); users with modify permissions: Set(kkanumuri) 
+19/12/2015 08:23:09 : INFO  : akka.event.slf4j.Slf4jLogger : Slf4jLogger started 
+19/12/2015 08:23:09 : INFO  : Remoting : Starting remoting 
+19/12/2015 08:23:09 : INFO  : Remoting : Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.16.0.8:56824] 
+19/12/2015 08:23:09 : INFO  : org.apache.spark.util.Utils : Successfully started service 'sparkDriver' on port 56824. 
+19/12/2015 08:23:09 : INFO  : org.apache.spark.SparkEnv : Registering MapOutputTracker 
+19/12/2015 08:23:09 : INFO  : org.apache.spark.SparkEnv : Registering BlockManagerMaster 
+19/12/2015 08:23:10 : INFO  : org.apache.spark.storage.DiskBlockManager : Created local directory at C:\Users\kkanumuri\AppData\Local\Temp\blockmgr-2af88ee3-304c-4efb-b513-b2be212e0f57 
+19/12/2015 08:23:10 : INFO  : org.apache.spark.storage.MemoryStore : MemoryStore started with capacity 972.5 MB 
+19/12/2015 08:23:10 : INFO  : org.apache.spark.HttpFileServer : HTTP File server directory is C:\Users\kkanumuri\AppData\Local\Temp\spark-aec13240-7228-443f-87f2-2c68c60c4183\httpd-346d2a8d-bf06-4cfd-8fd9-5c648e728a4b 
+19/12/2015 08:23:10 : INFO  : org.apache.spark.HttpServer : Starting HTTP Server 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.Server : jetty-8.y.z-SNAPSHOT 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.AbstractConnector : Started SocketConnector@0.0.0.0:56825 
+19/12/2015 08:23:10 : INFO  : org.apache.spark.util.Utils : Successfully started service 'HTTP file server' on port 56825. 
+19/12/2015 08:23:10 : INFO  : org.apache.spark.SparkEnv : Registering OutputCommitCoordinator 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.Server : jetty-8.y.z-SNAPSHOT 
+19/12/2015 08:23:10 : WARN  : org.spark-project.jetty.util.component.AbstractLifeCycle : FAILED SelectChannelConnector@0.0.0.0:4040: java.net.BindException: Address already in use: bind 
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.spark-project.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.spark-project.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.spark-project.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.spark-project.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.spark-project.jetty.server.Server.doStart(Server.java:293)
+	at org.spark-project.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.apache.spark.ui.JettyUtils$.org$apache$spark$ui$JettyUtils$$connect$1(JettyUtils.scala:236)
+	at org.apache.spark.ui.JettyUtils$$anonfun$3.apply(JettyUtils.scala:246)
+	at org.apache.spark.ui.JettyUtils$$anonfun$3.apply(JettyUtils.scala:246)
+	at org.apache.spark.util.Utils$$anonfun$startServiceOnPort$1.apply$mcVI$sp(Utils.scala:1913)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+	at org.apache.spark.util.Utils$.startServiceOnPort(Utils.scala:1904)
+	at org.apache.spark.ui.JettyUtils$.startJettyServer(JettyUtils.scala:246)
+	at org.apache.spark.ui.WebUI.bind(WebUI.scala:136)
+	at org.apache.spark.SparkContext$$anonfun$13.apply(SparkContext.scala:465)
+	at org.apache.spark.SparkContext$$anonfun$13.apply(SparkContext.scala:465)
+	at scala.Option.foreach(Option.scala:236)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:465)
+	at com.ags.eiq.utils.CassendraConnector.connect(CassendraConnector.java:120)
+	at com.ags.eiq.stepdefinations.RunTest.setUp(RunTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:87)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+19/12/2015 08:23:10 : WARN  : org.spark-project.jetty.util.component.AbstractLifeCycle : FAILED org.spark-project.jetty.server.Server@26d73a7a: java.net.BindException: Address already in use: bind 
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.spark-project.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.spark-project.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.spark-project.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.spark-project.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.spark-project.jetty.server.Server.doStart(Server.java:293)
+	at org.spark-project.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.apache.spark.ui.JettyUtils$.org$apache$spark$ui$JettyUtils$$connect$1(JettyUtils.scala:236)
+	at org.apache.spark.ui.JettyUtils$$anonfun$3.apply(JettyUtils.scala:246)
+	at org.apache.spark.ui.JettyUtils$$anonfun$3.apply(JettyUtils.scala:246)
+	at org.apache.spark.util.Utils$$anonfun$startServiceOnPort$1.apply$mcVI$sp(Utils.scala:1913)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:141)
+	at org.apache.spark.util.Utils$.startServiceOnPort(Utils.scala:1904)
+	at org.apache.spark.ui.JettyUtils$.startJettyServer(JettyUtils.scala:246)
+	at org.apache.spark.ui.WebUI.bind(WebUI.scala:136)
+	at org.apache.spark.SparkContext$$anonfun$13.apply(SparkContext.scala:465)
+	at org.apache.spark.SparkContext$$anonfun$13.apply(SparkContext.scala:465)
+	at scala.Option.foreach(Option.scala:236)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:465)
+	at com.ags.eiq.utils.CassendraConnector.connect(CassendraConnector.java:120)
+	at com.ags.eiq.stepdefinations.RunTest.setUp(RunTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:87)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/api,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/static,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/executors/json,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/executors,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/environment/json,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/environment,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/storage/rdd,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/storage/json,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/storage,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/stages/pool,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/stages/stage,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/stages/json,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/stages,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/jobs/job,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/jobs/json,null} 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.handler.ContextHandler : stopped o.s.j.s.ServletContextHandler{/jobs,null} 
+19/12/2015 08:23:10 : WARN  : org.apache.spark.util.Utils : Service 'SparkUI' could not bind on port 4040. Attempting port 4041. 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.Server : jetty-8.y.z-SNAPSHOT 
+19/12/2015 08:23:10 : INFO  : org.spark-project.jetty.server.AbstractConnector : Started SelectChannelConnector@0.0.0.0:4041 
+19/12/2015 08:23:10 : INFO  : org.apache.spark.util.Utils : Successfully started service 'SparkUI' on port 4041. 
+19/12/2015 08:23:10 : INFO  : org.apache.spark.ui.SparkUI : Started SparkUI at http://172.16.0.8:4041 
+19/12/2015 08:23:10 : INFO  : org.apache.spark.scheduler.FairSchedulableBuilder : Created default pool default, schedulingMode: FIFO, minShare: 0, weight: 1 
+19/12/2015 08:23:10 : WARN  : org.apache.spark.metrics.MetricsSystem : Using default name DAGScheduler for source because spark.app.id is not set. 
+19/12/2015 08:23:10 : INFO  : org.apache.spark.deploy.client.AppClient$ClientEndpoint : Connecting to master spark://10.0.16.16:7077... 
+19/12/2015 08:23:30 : ERROR : org.apache.spark.util.SparkUncaughtExceptionHandler : Uncaught exception in thread Thread[appclient-registration-retry-thread,5,main] 
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@4fe6521 rejected from java.util.concurrent.ThreadPoolExecutor@59a15c16[Running, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:110)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint$$anonfun$tryRegisterAllMasters$1.apply(AppClient.scala:96)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint$$anonfun$tryRegisterAllMasters$1.apply(AppClient.scala:95)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:108)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint.tryRegisterAllMasters(AppClient.scala:95)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint.org$apache$spark$deploy$client$AppClient$ClientEndpoint$$registerWithMaster(AppClient.scala:121)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint$$anon$2$$anonfun$run$1.apply$mcV$sp(AppClient.scala:132)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1119)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint$$anon$2.run(AppClient.scala:124)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:304)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+19/12/2015 08:23:30 : INFO  : org.apache.spark.storage.DiskBlockManager : Shutdown hook called 
+19/12/2015 08:23:30 : INFO  : org.apache.spark.util.ShutdownHookManager : Shutdown hook called 
+19/12/2015 08:23:30 : INFO  : org.apache.spark.util.ShutdownHookManager : Deleting directory C:\Users\kkanumuri\AppData\Local\Temp\spark-aec13240-7228-443f-87f2-2c68c60c4183\httpd-346d2a8d-bf06-4cfd-8fd9-5c648e728a4b 
+19/12/2015 08:23:30 : INFO  : org.apache.spark.util.ShutdownHookManager : Deleting directory C:\Users\kkanumuri\AppData\Local\Temp\spark-aec13240-7228-443f-87f2-2c68c60c4183 

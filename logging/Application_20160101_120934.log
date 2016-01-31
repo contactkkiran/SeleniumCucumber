@@ -1,0 +1,60 @@
+01/01/2016 12:09:34 : INFO  : com.ags.eiq.logging.Log4J : Successfully loaded log4j properties file 
+01/01/2016 12:09:34 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'orFilepath' and the result is './objectrepository/ObjectRepository.xml' 
+01/01/2016 12:09:34 : INFO  : com.ags.eiq.utils.XMLReader : Started reading of the xml file: ./objectrepository/ObjectRepository.xml 
+01/01/2016 12:09:34 : INFO  : com.ags.eiq.utils.XMLReader : Completed reading of the xml file: ./objectrepository/ObjectRepository.xml 
+01/01/2016 12:09:35 : INFO  : org.apache.spark.SparkContext : Running Spark version 1.5.0 
+01/01/2016 12:09:36 : WARN  : org.apache.hadoop.util.NativeCodeLoader : Unable to load native-hadoop library for your platform... using builtin-java classes where applicable 
+01/01/2016 12:09:36 : INFO  : org.apache.spark.SecurityManager : Changing view acls to: kkanumuri 
+01/01/2016 12:09:36 : INFO  : org.apache.spark.SecurityManager : Changing modify acls to: kkanumuri 
+01/01/2016 12:09:36 : INFO  : org.apache.spark.SecurityManager : SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(kkanumuri); users with modify permissions: Set(kkanumuri) 
+01/01/2016 12:09:38 : INFO  : akka.event.slf4j.Slf4jLogger : Slf4jLogger started 
+01/01/2016 12:09:38 : INFO  : Remoting : Starting remoting 
+01/01/2016 12:09:38 : INFO  : Remoting : Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.16.0.6:50054] 
+01/01/2016 12:09:38 : INFO  : org.apache.spark.util.Utils : Successfully started service 'sparkDriver' on port 50054. 
+01/01/2016 12:09:38 : INFO  : org.apache.spark.SparkEnv : Registering MapOutputTracker 
+01/01/2016 12:09:38 : INFO  : org.apache.spark.SparkEnv : Registering BlockManagerMaster 
+01/01/2016 12:09:38 : INFO  : org.apache.spark.storage.DiskBlockManager : Created local directory at C:\Users\kkanumuri\AppData\Local\Temp\blockmgr-47513f41-9550-45d1-8546-76f71a167a54 
+01/01/2016 12:09:38 : INFO  : org.apache.spark.storage.MemoryStore : MemoryStore started with capacity 970.6 MB 
+01/01/2016 12:09:39 : INFO  : org.apache.spark.HttpFileServer : HTTP File server directory is C:\Users\kkanumuri\AppData\Local\Temp\spark-7a0bd6e1-7d6d-41a1-bf22-dd2e3ad9d16b\httpd-ad61781f-5728-4a4f-883d-da8d5ae436b1 
+01/01/2016 12:09:39 : INFO  : org.apache.spark.HttpServer : Starting HTTP Server 
+01/01/2016 12:09:39 : INFO  : org.spark-project.jetty.server.Server : jetty-8.y.z-SNAPSHOT 
+01/01/2016 12:09:39 : INFO  : org.spark-project.jetty.server.AbstractConnector : Started SocketConnector@0.0.0.0:50055 
+01/01/2016 12:09:39 : INFO  : org.apache.spark.util.Utils : Successfully started service 'HTTP file server' on port 50055. 
+01/01/2016 12:09:39 : INFO  : org.apache.spark.SparkEnv : Registering OutputCommitCoordinator 
+01/01/2016 12:09:39 : INFO  : org.spark-project.jetty.server.Server : jetty-8.y.z-SNAPSHOT 
+01/01/2016 12:09:39 : INFO  : org.spark-project.jetty.server.AbstractConnector : Started SelectChannelConnector@0.0.0.0:4040 
+01/01/2016 12:09:39 : INFO  : org.apache.spark.util.Utils : Successfully started service 'SparkUI' on port 4040. 
+01/01/2016 12:09:39 : INFO  : org.apache.spark.ui.SparkUI : Started SparkUI at http://172.16.0.6:4040 
+01/01/2016 12:09:39 : INFO  : org.apache.spark.scheduler.FairSchedulableBuilder : Created default pool default, schedulingMode: FIFO, minShare: 0, weight: 1 
+01/01/2016 12:09:40 : WARN  : org.apache.spark.metrics.MetricsSystem : Using default name DAGScheduler for source because spark.app.id is not set. 
+01/01/2016 12:09:40 : INFO  : org.apache.spark.deploy.client.AppClient$ClientEndpoint : Connecting to master spark://10.0.16.16:7077... 
+01/01/2016 12:10:00 : ERROR : org.apache.spark.util.SparkUncaughtExceptionHandler : Uncaught exception in thread Thread[appclient-registration-retry-thread,5,main] 
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@27c33e18 rejected from java.util.concurrent.ThreadPoolExecutor@94586ba[Running, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.reject(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint$$anonfun$tryRegisterAllMasters$1.apply(AppClient.scala:96)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint$$anonfun$tryRegisterAllMasters$1.apply(AppClient.scala:95)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:108)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint.tryRegisterAllMasters(AppClient.scala:95)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint.org$apache$spark$deploy$client$AppClient$ClientEndpoint$$registerWithMaster(AppClient.scala:121)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint$$anon$2$$anonfun$run$1.apply$mcV$sp(AppClient.scala:132)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1119)
+	at org.apache.spark.deploy.client.AppClient$ClientEndpoint$$anon$2.run(AppClient.scala:124)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+01/01/2016 12:10:00 : INFO  : org.apache.spark.storage.DiskBlockManager : Shutdown hook called 
+01/01/2016 12:10:00 : INFO  : org.apache.spark.util.ShutdownHookManager : Shutdown hook called 
+01/01/2016 12:10:00 : INFO  : org.apache.spark.util.ShutdownHookManager : Deleting directory C:\Users\kkanumuri\AppData\Local\Temp\spark-7a0bd6e1-7d6d-41a1-bf22-dd2e3ad9d16b\httpd-ad61781f-5728-4a4f-883d-da8d5ae436b1 
+01/01/2016 12:10:00 : INFO  : org.apache.spark.util.ShutdownHookManager : Deleting directory C:\Users\kkanumuri\AppData\Local\Temp\spark-7a0bd6e1-7d6d-41a1-bf22-dd2e3ad9d16b 

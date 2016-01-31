@@ -1,0 +1,14 @@
+02/01/2016 14:31:07 : INFO  : com.ags.eiq.logging.Log4J : Successfully loaded log4j properties file 
+02/01/2016 14:31:07 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'orFilepath' and the result is './objectrepository/ObjectRepository.xml' 
+02/01/2016 14:31:07 : INFO  : com.ags.eiq.utils.XMLReader : Started reading of the xml file: ./objectrepository/ObjectRepository.xml 
+02/01/2016 14:31:07 : INFO  : com.ags.eiq.utils.XMLReader : Completed reading of the xml file: ./objectrepository/ObjectRepository.xml 
+02/01/2016 14:31:07 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'browsertype' and the result is 'chrome' 
+02/01/2016 14:31:07 : INFO  : com.ags.eiq.webdriver.WebDriverEngine : Creating an instance of Chrome driver 
+02/01/2016 14:31:07 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'chromedriverpath' and the result is './lib/chromedriver.exe' 
+02/01/2016 14:31:10 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'testDataFilePath' and the result is './testdata/testdata.xls' 
+02/01/2016 14:31:10 : INFO  : com.ags.eiq.utils.ExcelReader : Reading tests from sheet [Login] 
+02/01/2016 14:31:10 : INFO  : com.ags.eiq.utils.ExcelReader : Completed reading tests from sheet [Login] 
+02/01/2016 14:31:10 : INFO  : com.ags.eiq.fixtures.BrowserActions : Executing command: [open] for url [http://www.google.com	] 
+02/01/2016 14:31:12 : INFO  : com.ags.eiq.fixtures.BrowserActions : Executing command: [windowMaximize] 
+02/01/2016 14:31:12 : INFO  : com.ags.eiq.configuration.ConfigProperties : Fetching the value from the Configuration file with key 'browsertype' and the result is 'chrome' 
+02/01/2016 14:31:13 : INFO  : com.ags.eiq.fixtures.BrowserActions : Clolsing the webdriver instance 

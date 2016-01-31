@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<frameworkconfig>
+	<config>
+	<!-- chrome|iexplore| -->
+		<browsertype>chrome</browsertype>
+		<applicationURL>http://www.google.com</applicationURL>
+		<chromedriverpath>./lib/chromedriver.exe</chromedriverpath>
+		<iedriverserverpath>./lib/IEDriverServer.exe</iedriverserverpath>
+		<elementwaitime>2000</elementwaitime>
+		<capturescreenshot>yes</capturescreenshot>
+		<firefoxprofilepath>pathtoFirefoxprofile</firefoxprofilepath>
+		<testDataFilePath>./testdata/testdata.xls</testDataFilePath>
+		<orFilepath>./objectrepository/ObjectRepository.xml</orFilepath>
+		<logFilepath>./logging</logFilepath>
+	</config>
+</frameworkconfig>
