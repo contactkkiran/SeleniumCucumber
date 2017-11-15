@@ -3,6 +3,7 @@ package com.tcm.stepdefinitions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import cucumber.api.java.en.Given;
@@ -11,12 +12,15 @@ import cucumber.api.java.en.When;
 
 public class HomePageStepDefinitions {
 
-	WebDriver driver = new FirefoxDriver();
+	public WebDriver driver;
 
 	@Given("^User navigates to SocVue Portal and logins with \"([^\"]*)\"$")
 	public void User_navigates_to_SocVue_Portal_and_logins_with(String url)
 			throws Throwable {
 		System.out.println("#######r" + url);
+		
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.get(url);
 	}
 

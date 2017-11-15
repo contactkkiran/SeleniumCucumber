@@ -1,0 +1,94 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "id": "to-check-the-functionality-of-login-authentication;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 70468508452,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to SocVue Portal and logins with \"Http://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Http://www.google.com",
+                  "offset": 49
+                }
+              ],
+              "location": "HomePageStepDefinitions.User_navigates_to_SocVue_Portal_and_logins_with(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10401394799,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters userEntersSearchCriteria \"Iphone5S\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Iphone5S",
+                  "offset": 38
+                }
+              ],
+              "location": "HomePageStepDefinitions.User_enters_userEntersSearchCriteria(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12252039041,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User selects the value from the suggestion dropdown",
+            "match": {
+              "location": "HomePageStepDefinitions.User_selects_the_value_from_the_suggestion_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16212,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Clicks on OK button",
+            "match": {
+              "location": "HomePageStepDefinitions.Clicks_on_OK_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@LoginSocVue"
+          }
+        ]
+      }
+    ],
+    "name": "To check the functionality of Login Authentication",
+    "description": "",
+    "id": "to-check-the-functionality-of-login-authentication",
+    "keyword": "Feature",
+    "uri": "Authentication.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Authentication"
+      }
+    ]
+  }
+]
